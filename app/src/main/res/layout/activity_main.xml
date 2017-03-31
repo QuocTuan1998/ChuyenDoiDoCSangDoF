@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.quoctuan.chuyendoidocsangdof.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNhapF"
+        android:text="Nhập Độ F : "
+        android:textSize="25dp"
+        android:textColor="#000000"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNhapF"
+        android:id="@+id/txtF"
+        android:inputType="number"
+        android:text="0"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtF"
+        android:id="@+id/txtNhapC"
+        android:text="Nhập Độ C : "
+        android:textSize="25dp"
+        android:textColor="#000000"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNhapC"
+        android:id="@+id/txtC"
+        android:inputType="number"
+        android:text="0"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_below="@id/txtC"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtText"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtC"
+        android:layout_toLeftOf="@+id/txtText"
+        android:id="@+id/btnFToC"
+        android:text="Chuyển sang độ C"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtC"
+        android:layout_toRightOf="@+id/txtText"
+        android:id="@+id/btnCtoF"
+        android:text="Chuyển sang độ F"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnFToC"
+        android:id="@+id/btnClear"
+        android:text="Clear"
+        />
+
+</RelativeLayout>
